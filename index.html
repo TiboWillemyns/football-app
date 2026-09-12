@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Hub</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f5f7;
+      color: #111827;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111827;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      background: #111827;
+      color: white;
+      border-radius: 18px;
+      padding: 35px;
+      margin-bottom: 25px;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #d1d5db;
+    }
+
+    .section-title {
+      margin: 25px 0 15px;
+      font-size: 24px;
+    }
+
+    .matches {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .match {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .league {
+      color: #6b7280;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .teams {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .time {
+      font-size: 20px;
+      color: #2563eb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #6b7280;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 23px;
+      }
+
+      .hero h2 {
+        font-size: 25px;
+      }
+
+      nav {
+        gap: 15px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>⚽ Football Hub</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Matches</a>
+    <a href="#">Leagues</a>
+    <a href="#">Teams</a>
+  </nav>
+
+  <main class="container">
+
+    <section class="hero">
+      <h2>Welcome to Football Hub</h2>
+      <p>Follow matches, leagues, teams and football news in one place.</p>
+    </section>
+
+    <h2 class="section-title">Today's Matches</h2>
+
+    <section class="matches">
+
+      <div class="match">
+        <div class="league">Premier League</div>
+        <div class="teams">
+          <span>Arsenal</span>
+          <span class="time">20:00</span>
+          <span>Chelsea</span>
+        </div>
+      </div>
+
+      <div class="match">
+        <div class="league">La Liga</div>
+        <div class="teams">
+          <span>Barcelona</span>
+          <span class="time">21:00</span>
+          <span>Real Madrid</span>
+        </div>
+      </div>
+
+      <div class="match">
+        <div class="league">Serie A</div>
+        <div class="teams">
+          <span>Inter</span>
+          <span class="time">20:45</span>
+          <span>Juventus</span>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    Football Hub © 2026
+  </footer>
+
+</body>
+</html>
